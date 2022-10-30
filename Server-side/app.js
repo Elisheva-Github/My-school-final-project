@@ -52,7 +52,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-// const url = 'mongodb://localhost:27017/mySchoolDB'
+// const mongoUrl = 'mongodb://localhost:27017/mySchoolDB'
 const mongoUrl='mongodb+srv://mySchool:mySchool150922@my-school.moluiv1.mongodb.net/?retryWrites=true&w=majority'
 mongoose.connect(mongoUrl,{})
 .then(()=>console.log('DB connected'))
